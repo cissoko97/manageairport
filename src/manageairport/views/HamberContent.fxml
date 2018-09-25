@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" style="-fx-background-color: rgba(136, 64, 56, 1);" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manageairport.controllers.HamberContentController">
+   <children>
+      <Button accessibleText="VOLE" alignment="CENTER" minWidth="42.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="menu">
+         <graphic>
+            <FontAwesomeIcon fill="#fcfcfc" glyphName="PLANE" size="2em" />
+         </graphic>
+         <VBox.margin>
+            <Insets top="6.0" />
+         </VBox.margin>
+         <tooltip>
+            <Tooltip text="Vol">
+               <font>
+                  <Font size="15.0" />
+               </font></Tooltip>
+         </tooltip>
+      </Button>
+      <Button accessibleText="RESERVATION" alignment="CENTER" layoutX="14.0" layoutY="16.0" minWidth="42.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="menu">
+         <graphic>
+            <FontAwesomeIcon fill="#fcfcfc" glyphName="BOOK" size="2em" />
+         </graphic>
+         <tooltip>
+            <Tooltip text="Reservation">
+               <font>
+                  <Font size="15.0" />
+               </font></Tooltip>
+         </tooltip>
+      </Button>
+      <Button accessibleText="USER" alignment="CENTER" layoutX="14.0" layoutY="16.0" minWidth="42.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="menu">
+         <graphic>
+            <FontAwesomeIcon accessibleText="USER" fill="#fcfcfc" glyphName="USER" size="2em" />
+         </graphic>
+         <tooltip>
+            <Tooltip text="Personnel">
+               <font>
+                  <Font size="15.0" />
+               </font></Tooltip>
+         </tooltip>
+      </Button>
+      <Button accessibleText="DASHBOARD" alignment="CENTER" layoutX="14.0" layoutY="16.0" minWidth="42.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="menu">
+         <graphic>
+            <FontAwesomeIcon fill="#fcfcfc" glyphName="DASHBOARD" size="2em" />
+         </graphic>
+         <tooltip>
+            <Tooltip text="Dashboard">
+               <font>
+                  <Font size="15.0" />
+               </font></Tooltip>
+         </tooltip>
+      </Button>
+      <Button accessibleText="DESTINATION" alignment="CENTER" layoutX="11.0" layoutY="112.0" minWidth="42.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="menu">
+         <graphic>
+            <FontAwesomeIcon fill="#fcfcfc" glyphName="GLOBE" size="2em" />
+         </graphic>
+         <tooltip>
+            <Tooltip text="Destination">
+               <font>
+                  <Font size="15.0" />
+               </font></Tooltip>
+         </tooltip>
+      </Button>
+      <Button accessibleText="DEPENSE" alignment="CENTER" layoutX="13.0" layoutY="144.0" minWidth="42.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="menu">
+         <graphic>
+            <FontAwesomeIcon accessibleText="FINANCE" fill="#fcfcfc" glyphName="EURO" size="2em" />
+         </graphic>
+         <tooltip>
+            <Tooltip text="Depense">
+               <font>
+                  <Font size="15.0" />
+               </font></Tooltip>
+         </tooltip>
+      </Button>
+      <Button accessibleText="LOGISTIC" alignment="CENTER" layoutX="16.0" layoutY="176.0" minWidth="42.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="menu">
+         <graphic>
+            <FontAwesomeIcon accessibleText="FINANCE" fill="#fcfcfc" glyphName="LIST" size="2em" />
+         </graphic>
+         <tooltip>
+            <Tooltip text="Logistic">
+               <font>
+                  <Font size="15.0" />
+               </font></Tooltip>
+         </tooltip>
+      </Button>
+      <VBox accessibleText="FOOTER" alignment="BOTTOM_CENTER" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button accessibleText="PARAMETER" alignment="CENTER" minWidth="42.0" mnemonicParsing="false" onAction="#handlerParameter" style="-fx-background-color: transparent;" styleClass="menu">
+               <graphic>
+                  <FontAwesomeIcon fill="#fcfcfc" glyphName="GEARS" size="2em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="6.0" />
+               </VBox.margin>
+               <tooltip>
+                  <Tooltip text="Parameter">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Tooltip>
+               </tooltip>
+            </Button>
+            <Button accessibleText="EXIT" alignment="CENTER" minWidth="42.0" mnemonicParsing="false" onAction="#exitApp" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIcon fill="#fcfcfc" glyphName="CLOSE" size="2em" text="" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="6.0" />
+               </VBox.margin>
+               <tooltip>
+                  <Tooltip text="Exit">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Tooltip>
+               </tooltip>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,10 @@
+.root{
+    -fx-background-image:url('/manageairport/ressources/boeing-avion.jpg');
+    -fx-background-size: cover;
+}
+.mhb{
+    -fx-background-color: #2f2f2fa3;
+}
+.btn:hover{
+    -fx-background-image:url('/manageairport/ressources/tesla.jpg');
+}

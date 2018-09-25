@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 juil. 2018, 08:53:38
+    Author     : HP
+*/
+
+#client{
+    -fx-border-color: red;
+}
+
+.save-btn{
+    -fx-border-radius: 5; 
+    -fx-background-color: #4D79C0;
+}
+
+.valid-btn {
+    -fx-border-radius: 5; 
+    -fx-background-color: #01A05E;
+}
+
+.update-btn{
+    -fx-border-radius: 5; 
+    -fx-background-color: #FEE435;
+}
+
+.cancel-btn{
+    -fx-border-radius: 5; 
+    -fx-background-color: #9F2A1C;
+}
+
+/*.menu:hover{
+    -fx-animated: true;
+    -fx-border-color: #EEF8EF;
+}*/

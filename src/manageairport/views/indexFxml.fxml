@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manageairport.controllers.IndexFxmlController">
+   <children>
+      <HBox alignment="CENTER" layoutX="50.0" layoutY="-2.0" maxWidth="1.7976931348623157E308" prefHeight="56.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="SPARKAIRLINE">
+               <HBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </HBox.margin>
+            </Label>
+            <TextField focusTraversable="false">
+               <HBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <JFXDrawer fx:id="drawer" layoutY="56.0" maxWidth="50.0" prefWidth="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="56.0" />
+      <JFXHamburger fx:id="hamber" layoutX="12.0" layoutY="14.0" prefHeight="23.0" prefWidth="23.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <AnchorPane fx:id="root" layoutX="54.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.0" />
+   </children>
+</AnchorPane>

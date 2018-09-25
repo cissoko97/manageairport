@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: #fff;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="manageairport.controllers.VolPaneController">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox alignment="TOP_CENTER" minWidth="-Infinity">
+               <children>
+                  <Label focusTraversable="false" text="Make a vole">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="CENTER">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="136.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Date" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Destination" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Id Avion" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Id vole">
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Place" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField editable="false" focusTraversable="false" promptText="price of ticket" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label text="Departure" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets right="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Button focusTraversable="false" mnemonicParsing="false" prefWidth="50.0" styleClass="save-btn" text="Save" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <GridPane.margin>
+                              <Insets top="5.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <TextField focusTraversable="false" promptText="id vol" GridPane.columnIndex="1" />
+                        <DatePicker focusTraversable="false" promptText="depart date" showWeekNumbers="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Arrival" GridPane.rowIndex="3" />
+                        <TextField focusTraversable="false" promptText="heure depart" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField focusTraversable="false" promptText="heure arrive" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <ComboBox focusTraversable="false" prefWidth="150.0" promptText="Destination" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <ComboBox focusTraversable="false" prefWidth="150.0" promptText="Avion" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Label focusTraversable="false" text="Make a vole">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableVole" focusTraversable="false" maxHeight="300.0" maxWidth="1.7976931348623157E308" prefHeight="200.0" tableMenuButtonVisible="true" />
+                  <HBox alignment="CENTER_RIGHT">
+                     <children>
+                        <Button focusTraversable="false" mnemonicParsing="false" prefWidth="70.0" styleClass="valid-btn" text="Valid">
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="15.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button focusTraversable="false" mnemonicParsing="false" prefWidth="70.0" styleClass="update-btn" text="Update">
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="15.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button focusTraversable="false" mnemonicParsing="false" prefWidth="70.0" styleClass="cancel-btn" text="Cancel">
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="15.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" minHeight="25.0">
+                           <children>
+                              <TextField id="client" focusTraversable="false">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button focusTraversable="false" mnemonicParsing="false" styleClass="valid-btn" text="Search">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <TableView fx:id="tableClient" focusTraversable="false" maxHeight="300.0" maxWidth="1.7976931348623157E308" prefHeight="200.0" tableMenuButtonVisible="true" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
